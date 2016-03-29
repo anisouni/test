@@ -1,0 +1,13 @@
+cmd list:
+
+
+***********Création de compte utilisateur******
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+
+git config --list
+nano ~/.gitconfig
+*********Initialisation du dépôt******
+git init
+
+
