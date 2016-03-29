@@ -15,3 +15,9 @@ git init
 Or git commit -m "Initial Commit" file   */To specify the file that we want to commit*/
 
 git diff  */ afficher les modifications sur le fichier/*
+git log   */ afficher toutes les modifications/commit des users/*
+
+
+*********Création d'un branche******
+git branch add-branch-cmd
+ git checkout add-branch-cmd
