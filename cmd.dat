@@ -17,6 +17,25 @@ Or git commit -m "Initial Commit" file   */To specify the file that we want to c
 git diff  */ afficher les modifications sur le fichier/*
 git log   */ afficher toutes les modifications/commit des users/*
 
-*********Création d'un branche******
-git branch add-branch-cmd
- git checkout add-branch-cmd
+*********Création et manipulation des branches******
+git branch add-branch-cmd   */ création d'une branche /*
+git checkout add-branch-cmd  */ basculer vers une branche /*
+git merge add-branch-cmd master */ merger une branch vers le master/*
+git branch -a            */ afficher les braches /*
+git branch -d add-branch-cmd  */supprimer une branche déja mergé/*
+git branch -D add-branch-cmd  */supprimer une branche non mergé/*
+
+git lg   */ afficher toutes les modifications avec une arboresence/*
+
+*********** déposer le dépôt dans git server ********
+git remote add origin https://github.com/anisouni/test.git
+git remote -v
+git push -u origin master
+
+
+
+
+
+
+********** Note *****************
+http://www.wei-wang.com/ExplainGitWithD3/  */ lien intéressant pour visualiser l'arbre /*
