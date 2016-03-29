@@ -7,7 +7,11 @@ git config --global user.email "youremail@domain.com"
 
 git config --list
 nano ~/.gitconfig
+git status
 *********Initialisation du dépôt******
 git init
 
+   git commit -m "Initial Commit" -a     */commit is to take a snapshot  -m  :message -a: for all files*/
+Or git commit -m "Initial Commit" file   */To specify the file that we want to commit*/
 
+git diff  */ afficher les modifications sur le fichier/*
