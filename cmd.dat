@@ -14,7 +14,8 @@ git init
    git commit -m "Initial Commit" -a     */commit is to take a snapshot  -m  :message -a: for all files*/
 Or git commit -m "Initial Commit" file   */To specify the file that we want to commit*/
 
-git diff  */ afficher les modifications sur le fichier/*
+git diff  */ afficher les modifications % à la dernière version du fichier/*
+git diff HEAD */HEAD is just a keyword that refers to the most recent commit made to the repository/*
 git log   */ afficher toutes les modifications/commit des users/*
 
 *********Création et manipulation des branches******
@@ -28,7 +29,7 @@ git branch -D add-branch-cmd  */supprimer une branche non mergé/*
 git lg   */ afficher toutes les modifications avec une arboresence/*
 
 *********** déposer le dépôt dans git server ********
-git remote add origin https://github.com/anisouni/test.git
+gi
 git remote -v
 git push -u origin master
 
