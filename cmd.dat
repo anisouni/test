@@ -17,7 +17,7 @@ Or git commit -m "Initial Commit" file   */To specify the file that we want to c
 git diff  */ afficher les modifications % à la dernière version du fichier/*
 git diff HEAD */HEAD is just a keyword that refers to the most recent commit made to the repository/*
 git log   */ afficher toutes les modifications/commit des users/*
-
+git add
 *********Création et manipulation des branches******
 git branch add-branch-cmd   */ création d'une branche /*
 git checkout add-branch-cmd  */ basculer vers une branche /*
