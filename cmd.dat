@@ -77,6 +77,16 @@ git commit -m "apply patch"
 # delete the patch file
 rm 0001-First-commit-in-the-branch.patch 
 
+Create a patch for a selected commit
+
+You can specify the commit ID and the number of patches which should be created. For example, to create a patch for selected commits based on the HEAD pointer you can use the following commands.
+
+# create patch for the last commit based on HEAD
+git format-patch -1 HEAD
+
+# create a patch series for the last three commits 
+# based on head
+git format-patch -3 HEAD 
 
 
 
