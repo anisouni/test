@@ -32,7 +32,49 @@ git remote add origin https://github.com/anisouni/test.git
 git remote -v
 git push -u origin master
 
+*********** récupérer le dépôt de git server ********
+git remote add origin https://github.com/anisouni/test.git
+git push -u origin master
 
+
+64.1. Create and apply patches
+
+The following example creates a branch, changes several files and creates a commit recording these changes.
+
+# create a new branch
+git branch mybranch
+# use this new branch
+git checkout mybranch
+# make some changes
+touch test05
+# change some content in an existing file
+echo "new content for test01" >test01
+# commit this to the branch
+git add .
+git commit -m "first commit in the branch" 
+The next example creates a patch for these changes.
+
+# creates a patch --> git format-patch master
+git format-patch origin/master
+
+# this creates the file:
+# patch 0001-First-commit-in-the-branch.patch 
+To apply this patch to your master branch in a different clone of the repository, switch to it and use the git apply command.
+
+# switch to the master branch
+git checkout master
+
+# apply the patch
+git apply 0001-First-commit-in-the-branch.patch 
+Afterwards you can commit the changes introduced by the patches and delete the patch file.
+
+# patch is applied to master
+# change can be committed
+git add .
+git commit -m "apply patch"
+
+# delete the patch file
+rm 0001-First-commit-in-the-branch.patch 
 
 
 
