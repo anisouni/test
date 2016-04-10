@@ -22,6 +22,8 @@ git add
 git branch add-branch-cmd   */ création d'une branche /*
 git checkout add-branch-cmd  */ basculer vers une branche /*
 git merge add-branch-cmd master */ merger une branch vers le master/*
+NOTE: pour merger une branch B vers le master on peut se connecter vers le master, ensuite faire git merge B
+
 git branch -a            */ afficher les braches /*
 git branch -d add-branch-cmd  */supprimer une branche déja mergé/*
 git branch -D add-branch-cmd  */supprimer une branche non mergé/*
